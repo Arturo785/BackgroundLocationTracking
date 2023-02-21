@@ -12,7 +12,7 @@ class LocationApp: Application() {
         super.onCreate()
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             val channel = NotificationChannel(
-                "location",
+                "location", // the id must be the same as the notifications
                 "Location",
                 NotificationManager.IMPORTANCE_LOW
             )
